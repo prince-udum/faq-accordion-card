@@ -122,6 +122,8 @@ main {
 
 .question {
     border-bottom: 2px solid var(--light-grayish-blue);
+    
+    
 }
 
 .question-title{
@@ -131,6 +133,7 @@ main {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    
     
 }
 .question-title:hover {
@@ -142,6 +145,7 @@ main {
     color: var(--dark-grayish-blue);
     padding-bottom: .9rem;
     max-width: 250px;
+    
 }
 
 .questions {
@@ -196,11 +200,20 @@ main {
 /* hide questions answers */
 .question-text {
     display: none;
+    transition: 0.5s;
 }
 
 
 .show-text .question-text{
     display: block;
+}
+
+.arrow {
+    transition: all 0.3s ease;
+}
+
+.show-text .arrow {
+    transform: rotate(180deg);
 }
 
 .show-text .question-title {
